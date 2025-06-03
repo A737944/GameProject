@@ -109,6 +109,9 @@ namespace GameProject
             private IPlayer player2;
             private RPSMove player1Move;
             private RPSMove player2Move;
+            
+            public int Player1Wins { get; private set; } = 0;
+            public int Player2Wins { get; private set; } = 0;
 
             public RPSGameLogic(IPlayer p1, IPlayer p2)
             {
@@ -127,18 +130,42 @@ namespace GameProject
                 player1Move = (RPSMove)random.Next(0, 3);
                 player2Move = (RPSMove)random.Next(0, 3);
             }
+            public void Start()
+            {
+                Player1Wins = 0;
+                Player2Wins = 0;
+            }
 
-            public void Start() { }
+
+            public bool IsGameOver()
+            {
+                return Player1Wins == 3 || Player2Wins == 3;
+            }
+
+            
 
             public GameResult PlayRound()
             {
-                if (player1Move == player2Move) return GameResult.Draw;
+
+                if (player1Move == player2Move)
+                    return GameResult.Draw;
+
                 if ((player1Move == RPSMove.Rock && player2Move == RPSMove.Scissors) ||
                     (player1Move == RPSMove.Paper && player2Move == RPSMove.Rock) ||
                     (player1Move == RPSMove.Scissors && player2Move == RPSMove.Paper))
+                {
+                    Player1Wins++;
                     return GameResult.Win;
-
-                return GameResult.Lose;
+                }
+                else
+                {
+                    Player2Wins++;
+                    return GameResult.Lose;
+                }
+            }
+            public string GetScoreText()
+            {
+                return $"{player1.Name}: {Player1Wins} 勝, {player2.Name}: {Player2Wins} 勝";
             }
 
             public string GetResultText()

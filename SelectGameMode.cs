@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameProject;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,51 +10,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GameProject
 {
     public partial class SelectGameMode : Form
     {
-        private Form1 from1;
-        public string GameType { get; private set; }
-        public SelectGameMode()
+        
+        public string SelectedMode { get; private set; }
+        public string gameType;
+        public SelectGameMode(string gameType)
         {
             InitializeComponent();
-           
+            this.gameType = gameType;
+            this.Text = $"Select Game Mode-{gameType}";
+            
+
         }
 
-        public void Setparent(Form1 parent)
-        {
-            from1 = parent;
-        }
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            GameType = "2p";
+            SelectedMode = "2p";
             this.DialogResult = DialogResult.OK;
-            this.Hide();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            GameType = "com";
+            SelectedMode = "com";
             this.DialogResult = DialogResult.OK;
-            this.Hide();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            GameType = "com vs com";    
+            SelectedMode = "com vs com";    
             this.DialogResult = DialogResult.OK;
-            this.Hide();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-            this.Hide();
-            if (from1 != null)
-            {
-                from1.Show(); // 如果有父窗體，則顯示它
-            }
+        { 
+           this.DialogResult = DialogResult.Cancel; // 如果不選擇任何模式，則返回 Cancel
+           this.Close(); // 關閉對話框
         }
     }
 }

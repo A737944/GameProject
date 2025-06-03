@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|c:\\users\\a7379\\desktop\\project-1\\project-1\\gameproject\\gameproject\\rpsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:rpsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\rpsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:rpsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|c:\\users\\a7379\\desktop\\project-1\\project-1\\gameproject\\gameproject\\dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|c:\\users\\a7379\\desktop\\project-1\\project-1\\gameproject\\gameproject\\gameframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:gameframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|c:\\users\\a7379\\desktop\\project-1\\project-1\\gameproject\\gameproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|c:\\users\\a7379\\desktop\\project-1\\project-1\\gameproject\\gameproject\\selectgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:selectgamemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82D2C31E-8D9D-461F-A7E8-024FD7734AE1}|GameProject.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RPSGame.cs",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\RPSGame.cs",
+              "RelativeDocumentMoniker": "RPSGame.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\RPSGame.cs*",
+              "RelativeToolTip": "RPSGame.cs*",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAuwHkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:10:31.372Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiceGame.cs",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\DiceGame.cs",
+              "RelativeDocumentMoniker": "DiceGame.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\DiceGame.cs",
+              "RelativeToolTip": "DiceGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:26:49.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiceGame.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\DiceGame.cs",
+              "RelativeDocumentMoniker": "DiceGame.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\DiceGame.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "DiceGame.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:26:43.101Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RPSGame.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\RPSGame.cs",
+              "RelativeDocumentMoniker": "RPSGame.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\RPSGame.cs [\u8A2D\u8A08]*",
+              "RelativeToolTip": "RPSGame.cs [\u8A2D\u8A08]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:10:23.637Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameFramework.cs",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\GameFramework.cs",
+              "RelativeDocumentMoniker": "GameFramework.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\GameFramework.cs",
+              "RelativeToolTip": "GameFramework.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwGMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:09:22.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:10:39.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectGameMode.cs",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\SelectGameMode.cs",
+              "RelativeDocumentMoniker": "SelectGameMode.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\SelectGameMode.cs",
+              "RelativeToolTip": "SelectGameMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:14:10.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\A7379\\Desktop\\project-1\\project-1\\GameProject\\gameproject\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T11:08:59.691Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

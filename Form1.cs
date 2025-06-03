@@ -1,3 +1,5 @@
+using System.Security.AccessControl;
+
 namespace GameProject
 {
     public partial class Form1 : Form
@@ -5,8 +7,7 @@ namespace GameProject
         public Form1()
         {
             InitializeComponent();
-            SelectGameMode modeDiolog = new SelectGameMode();
-            modeDiolog.Setparent(this);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -20,22 +21,25 @@ namespace GameProject
         }
         private void ShowModeDialog(string gametype)
         {
-            SelectGameMode modeDialog = new SelectGameMode();
-            modeDialog.Setparent(this);
-            if (modeDialog.ShowDialog() == DialogResult.OK)
+            using (SelectGameMode selectGameMode = new SelectGameMode(gametype))
             {
-                string selectedMode = modeDialog.GameType;
-                if (gametype == "dice")
+                if (selectGameMode.ShowDialog() == DialogResult.OK)
                 {
-                    DiceGame diceGame = new DiceGame(selectedMode, modeDialog);
-                    diceGame.Show();
+                    string mode = selectGameMode.SelectedMode;
+
+                    if (mode == null) return;
+
+                    if (gametype == "dice")
+                    {
+                        DiceGame diceGame = new DiceGame(mode, this);
+                        diceGame.Show();
+                    }
+                    else if (gametype == "rps")
+                    {
+                        RPSGame rpsGame = new RPSGame(mode, this);
+                        rpsGame.Show();
+                    }
                 }
-                else if (gametype == "rps")
-                {
-                    RPSGame rpsGame = new RPSGame(selectedMode, modeDialog);
-                    rpsGame.Show();
-                }
-                this.Hide();
             }
         }
 

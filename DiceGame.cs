@@ -5,32 +5,34 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameProject.Properties;
 using static GameProject.GameFramework;
 
 namespace GameProject
 {
     public partial class DiceGame : Form
     {
-        private SelectGameMode parentModeFrom; 
+        private SelectGameMode parentModeFrom;
         private string gameMode;
         private string gameType;
         private GameFramework.DiceGameLogic gameLogic;
         private GameFramework.Player player1;
         private GameFramework.Player player2;
         private Random random = new Random();
-
+        private Form1 parentForm;
         private int? player1Roll = null;
         private int? player2Roll = null;
 
-        public DiceGame(string mode, SelectGameMode parent)
+        public DiceGame(string mode, Form1 parent)
         {
 
             InitializeComponent();
             gameType = mode;
-            parentModeFrom = parent;
+            parentForm = parent;
 
             this.Text = $"骰子遊戲-{gameType}";
 
@@ -76,6 +78,7 @@ namespace GameProject
 
                 button1.Enabled = false;
                 button2.Enabled = true;
+
             }
             else if (gameType == "com")
             {
@@ -83,7 +86,11 @@ namespace GameProject
 
                 label1.Text = $"{player1.Name} 丟出 {gameLogic.Player1Roll}";
                 label2.Text = $"{player2.Name} 丟出 {gameLogic.Player2Roll}";
+                pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
+                pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
                 label3.Text = gameLogic.GetWinnerText();
+                label4.Text = gameLogic.GetScoreText();
+                label4.Visible = true;
             }
             else if (gameType == "com vs com")
             {
@@ -108,7 +115,10 @@ namespace GameProject
                 label1.Text = $"{player1.Name} 丟出 {gameLogic.Player1Roll}";
                 label2.Text = $"{player2.Name} 丟出 {gameLogic.Player2Roll}";
                 label3.Text = gameLogic.GetWinnerText();
-
+                pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
+                pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
+                label4.Text = gameLogic.GetScoreText();
+                label4.Visible = true;
                 button1.Enabled = true;
                 button2.Enabled = false;
             }
@@ -133,6 +143,8 @@ namespace GameProject
 
                 label1.Text = $"{player1.Name} 丟出 {gameLogic.Player1Roll}";
                 label2.Text = $"{player2.Name} 丟出 {gameLogic.Player2Roll}";
+                pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
+                pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
                 label3.Text = gameLogic.GetWinnerText();
                 label4.Text = gameLogic.GetScoreText(); // 顯示比分
             }
@@ -185,10 +197,59 @@ namespace GameProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide(); // 關閉當前遊戲視窗
-            if (parentModeFrom != null)
+            parentForm.Show();
+            this.Close();
+        }
+
+        private Image GetDiceImage(int roll)
+        {
+            switch (roll)
             {
-                parentModeFrom.Show(); // 如果有父窗體，則顯示它
+                case 1: return Properties.Resource.dice_six_faces_one;
+                case 2: return Properties.Resource.dice_six_faces_two;
+                case 3: return Properties.Resource.dice_six_faces_three;
+                case 4: return Properties.Resource.dice_six_faces_four;
+                case 5: return Properties.Resource.dice_six_faces_five;
+                case 6: return Properties.Resource.dice_six_faces_six;
+                default: return null;
+            }
+        }
+
+        private void 存檔ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = "dice.txt";
+                string scoreText = gameLogic.GetScoreText(); // 假設是 "Player1: 2, Player2: 1"
+                File.WriteAllText(path, scoreText);
+                MessageBox.Show("存檔成功！");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"存檔失敗：{ex.Message}");
+            }
+        }
+
+        private void 載入ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = "dice.txt";
+                if (File.Exists(path))
+                {
+                    string content = File.ReadAllText(path);
+                    label4.Text = content;
+                    label4.Visible = true;
+                    MessageBox.Show("載入成功！");
+                }
+                else
+                {
+                    MessageBox.Show("找不到 dice.txt");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"載入失敗：{ex.Message}");
             }
         }
     }
