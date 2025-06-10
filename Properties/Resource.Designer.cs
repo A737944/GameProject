@@ -143,6 +143,26 @@ namespace GameProject.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap roll_dice {
+            get {
+                object obj = ResourceManager.GetObject("roll_dice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap RPS_roll {
+            get {
+                object obj = ResourceManager.GetObject("RPS_roll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap scissors {
             get {
                 object obj = ResourceManager.GetObject("scissors", resourceCulture);

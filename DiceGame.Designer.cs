@@ -49,17 +49,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(39, 122);
+            label1.Location = new Point(16, 86);
             label1.Name = "label1";
             label1.Size = new Size(52, 15);
             label1.TabIndex = 0;
             label1.Text = "player1:";
-            label1.Click += label1_Click;
+            
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(485, 122);
+            label2.Location = new Point(462, 86);
             label2.Name = "label2";
             label2.Size = new Size(52, 15);
             label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(195, 198);
+            button1.Location = new Point(172, 162);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
@@ -78,7 +78,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(195, 275);
+            label3.Location = new Point(172, 239);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
             label3.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(485, 198);
+            button2.Location = new Point(462, 162);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 4;
@@ -97,16 +97,16 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(195, 329);
+            label4.Location = new Point(172, 293);
             label4.Name = "label4";
             label4.Size = new Size(42, 15);
             label4.TabIndex = 5;
             label4.Text = "label4";
-            label4.Click += label4_Click;
+            
             // 
             // button3
             // 
-            button3.Location = new Point(485, 271);
+            button3.Location = new Point(462, 235);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(253, 97);
+            pictureBox1.Location = new Point(230, 61);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 72);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -125,7 +125,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(666, 97);
+            pictureBox2.Location = new Point(643, 61);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 72);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -137,7 +137,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(804, 24);
             menuStrip1.TabIndex = 9;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -151,14 +151,14 @@
             // 存檔ToolStripMenuItem
             // 
             存檔ToolStripMenuItem.Name = "存檔ToolStripMenuItem";
-            存檔ToolStripMenuItem.Size = new Size(180, 22);
+            存檔ToolStripMenuItem.Size = new Size(98, 22);
             存檔ToolStripMenuItem.Text = "存檔";
             存檔ToolStripMenuItem.Click += 存檔ToolStripMenuItem_Click;
             // 
             // 載入ToolStripMenuItem
             // 
             載入ToolStripMenuItem.Name = "載入ToolStripMenuItem";
-            載入ToolStripMenuItem.Size = new Size(180, 22);
+            載入ToolStripMenuItem.Size = new Size(98, 22);
             載入ToolStripMenuItem.Text = "載入";
             載入ToolStripMenuItem.Click += 載入ToolStripMenuItem_Click;
             // 
@@ -166,7 +166,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(804, 333);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button3);

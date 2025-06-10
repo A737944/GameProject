@@ -49,9 +49,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(129, 185);
+            button1.Location = new Point(66, 185);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(171, 68);
             button1.TabIndex = 0;
             button1.Text = "剪刀";
             button1.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(317, 185);
+            button2.Location = new Point(254, 185);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(171, 68);
             button2.TabIndex = 1;
             button2.Text = "石頭";
             button2.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(510, 185);
+            button3.Location = new Point(447, 185);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(171, 68);
             button3.TabIndex = 2;
             button3.Text = "布";
             button3.UseVisualStyleBackColor = true;
@@ -98,17 +98,18 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(129, 279);
+            label3.Font = new Font("Microsoft JhengHei UI", 18F);
+            label3.Location = new Point(129, 282);
             label3.Name = "label3";
-            label3.Size = new Size(34, 15);
+            label3.Size = new Size(67, 30);
             label3.TabIndex = 5;
             label3.Text = "結果:";
             // 
             // button4
             // 
-            button4.Location = new Point(510, 257);
+            button4.Location = new Point(447, 257);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(171, 68);
             button4.TabIndex = 6;
             button4.Text = "回首頁";
             button4.UseVisualStyleBackColor = true;
@@ -117,9 +118,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Microsoft JhengHei UI", 18F);
             label4.Location = new Point(129, 353);
             label4.Name = "label4";
-            label4.Size = new Size(34, 15);
+            label4.Size = new Size(67, 30);
             label4.TabIndex = 7;
             label4.Text = "比分:";
             // 
@@ -148,7 +150,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(693, 24);
             menuStrip1.TabIndex = 10;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -162,14 +164,14 @@
             // 存檔ToolStripMenuItem
             // 
             存檔ToolStripMenuItem.Name = "存檔ToolStripMenuItem";
-            存檔ToolStripMenuItem.Size = new Size(180, 22);
+            存檔ToolStripMenuItem.Size = new Size(98, 22);
             存檔ToolStripMenuItem.Text = "存檔";
             存檔ToolStripMenuItem.Click += 存檔ToolStripMenuItem_Click;
             // 
             // 載入ToolStripMenuItem
             // 
             載入ToolStripMenuItem.Name = "載入ToolStripMenuItem";
-            載入ToolStripMenuItem.Size = new Size(180, 22);
+            載入ToolStripMenuItem.Size = new Size(98, 22);
             載入ToolStripMenuItem.Text = "載入";
             載入ToolStripMenuItem.Click += 載入ToolStripMenuItem_Click;
             // 
@@ -177,7 +179,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(693, 402);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
