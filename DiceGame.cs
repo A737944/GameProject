@@ -15,23 +15,72 @@ using System.Text.Json;
 
 namespace GameProject
 {
+    /// <summary>
+    /// 骰子遊戲表單類別
+    /// </summary>
     public partial class DiceGame : Form
     {
+<<<<<<< HEAD
 
 
+=======
+        /// <summary>
+        /// 遊戲類型
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private string gameType;
+
+        /// <summary>
+        /// 骰子遊戲邏輯
+        /// </summary>
         private GameFramework.DiceGameLogic gameLogic;
+
+        /// <summary>
+        /// 玩家1
+        /// </summary>
         private GameFramework.Player player1;
+
+        /// <summary>
+        /// 玩家2
+        /// </summary>
         private GameFramework.Player player2;
+
+        /// <summary>
+        /// 隨機數產生器
+        /// </summary>
         private Random random = new Random();
+
+        /// <summary>
+        /// 父表單參考
+        /// </summary>
         private Form1 parentForm;
+
+        /// <summary>
+        /// 玩家1擲骰結果
+        /// </summary>
         private int? player1Roll = null;
+
+        /// <summary>
+        /// 玩家2擲骰結果
+        /// </summary>
         private int? player2Roll = null;
         private Account currentUser;
 
+<<<<<<< HEAD
         public DiceGame(string mode, Form1 parent, Account currentUser)
         {
+=======
+        /// <summary>
+        /// 當前使用者
+        /// </summary>
+        private Account currentUser;
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
 
+        /// <summary>
+        /// 骰子遊戲表單建構函式
+        /// </summary>
+        public DiceGame(string mode, Form1 parent, Account currentUser)
+        {
             InitializeComponent();
             this.currentUser = currentUser;
             gameType = mode;
@@ -71,12 +120,22 @@ namespace GameProject
             this.currentUser = currentUser;
         }
 
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// 玩家1擲骰按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private async void button1_Click(object sender, EventArgs e)
         {
             if (gameType == "2p")
             {
                 pictureBox1.Image = Properties.Resource.roll_dice;
+<<<<<<< HEAD
                 label1.Text = $"{player1.Name} \n擲骰中...";
+=======
+                label1.Text = $"{player1.Name} 擲骰中...";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                 label2.Text = "";
                 label3.Text = "勝負:";
 
@@ -85,7 +144,11 @@ namespace GameProject
 
                 // 擲骰 + 顯示點數與靜態圖
                 gameLogic.RollPlayer1(); // 只擲 Player1
+<<<<<<< HEAD
                 label1.Text = $"{player1.Name} \n丟出 {gameLogic.Player1Roll}";
+=======
+                label1.Text = $"{player1.Name} 丟出 {gameLogic.Player1Roll}";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                 pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
 
                 // 禁用自己，啟用玩家2按鈕
@@ -95,8 +158,13 @@ namespace GameProject
             }
             else if (gameType == "com")
             {
+<<<<<<< HEAD
                 label1.Text = $"{player1.Name} \n擲骰中...";
                 label2.Text = $"{player2.Name} \n擲骰中...";
+=======
+                label1.Text = $"{player1.Name} 擲骰中...";
+                label2.Text = $"{player2.Name} 擲骰中...";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
 
                 pictureBox1.Image = Properties.Resource.roll_dice;
                 pictureBox2.Image = Properties.Resource.roll_dice;
@@ -108,6 +176,7 @@ namespace GameProject
 
                 var result = gameLogic.PlayRound();
 
+<<<<<<< HEAD
                 label1.Text = $"{player1.Name} \n丟出 {gameLogic.Player1Roll}";
                 pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
 
@@ -117,6 +186,15 @@ namespace GameProject
                 //label3.Text = "勝負：" + gameLogic.GetWinnerText();
                 label3.Text = gameLogic.GetWinnerText();
                 label3.ForeColor = Color.Red;
+=======
+                label1.Text = $"{player1.Name} 丟出 {gameLogic.Player1Roll}";
+                pictureBox1.Image = GetDiceImage(gameLogic.Player1Roll);
+
+                label2.Text = $"{player2.Name} 丟出 {gameLogic.Player2Roll}";
+                pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
+
+                label3.Text = "勝負：" + gameLogic.GetWinnerText();
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                 label4.Text = gameLogic.GetScoreText();
                 label4.Visible = true;
 
@@ -146,33 +224,49 @@ namespace GameProject
             {
                 button2.Visible = false;
                 AutoPlayComVsCom();
-
-                // 啟用重新開始按鈕
             }
         }
 
+<<<<<<< HEAD
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
+=======
+        /// <summary>
+        /// 玩家2擲骰按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private async void button2_Click(object sender, EventArgs e)
         {
             if (gameType == "2p")
             {
                 // 顯示擲骰動畫
                 pictureBox2.Image = Properties.Resource.roll_dice;
+<<<<<<< HEAD
                 label2.Text = $"{player2.Name} \n擲骰中...";
+=======
+                label2.Text = $"{player2.Name} 擲骰中...";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
 
                 await Task.Delay(1000);
 
                 gameLogic.RollPlayer2(); // 只擲 Player2 並更新分數
+<<<<<<< HEAD
                 label2.Text = $"{player2.Name} \n丟出 {gameLogic.Player2Roll}";
                 pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
 
                 // 顯示勝負與分數
                 label3.Text = gameLogic.GetWinnerText();
                 label3.ForeColor = Color.Red;
+=======
+                label2.Text = $"{player2.Name} 丟出 {gameLogic.Player2Roll}";
+                pictureBox2.Image = GetDiceImage(gameLogic.Player2Roll);
+
+                // 顯示勝負與分數
+                label3.Text = "勝負: " + gameLogic.GetWinnerText();
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                 label4.Text = gameLogic.GetScoreText();
                 label4.Visible = true;
 
@@ -184,9 +278,11 @@ namespace GameProject
             {
                 ResetGame(); // 重置遊戲狀態
             }
-
         }
 
+        /// <summary>
+        /// 電腦對戰自動模式
+        /// </summary>
         private async void AutoPlayComVsCom()
         {
             gameLogic.Start(); // 重置勝場
@@ -229,13 +325,20 @@ namespace GameProject
             button2.Text = "重新開始";
             button2.Visible = true; // 顯示重新開始按鈕
         }
+
+        /// <summary>
+        /// 重置遊戲狀態
+        /// </summary>
         private void ResetGame()
         {
             // 重置 GameLogic 狀態
             gameLogic.Start();  // 假設 Start() 是重置勝場
 
             // 重設 UI
+<<<<<<< HEAD
 
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label4.Text = "";
             label4.Visible = false;
 
@@ -258,14 +361,12 @@ namespace GameProject
             else if (gameType == "com vs com")
             {
                 button1.Text = "Auto Play";
-
             }
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
 
-        }
-
+        /// <summary>
+        /// 返回按鈕點擊事件
+        /// </summary>
         private void button3_Click(object sender, EventArgs e)
         {
             parentForm.UpdateUserInfo();
@@ -273,6 +374,9 @@ namespace GameProject
             this.Close();
         }
 
+        /// <summary>
+        /// 取得骰子圖片
+        /// </summary>
         private Image GetDiceImage(int roll)
         {
             switch (roll)
@@ -287,6 +391,9 @@ namespace GameProject
             }
         }
 
+        /// <summary>
+        /// 存檔選單點擊事件
+        /// </summary>
         private void 存檔ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -302,6 +409,9 @@ namespace GameProject
             }
         }
 
+        /// <summary>
+        /// 載入選單點擊事件
+        /// </summary>
         private void 載入ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -336,3 +446,4 @@ namespace GameProject
         }
     }
 }
+

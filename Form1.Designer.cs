@@ -39,7 +39,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 136);
+<<<<<<< HEAD
             label1.Location = new Point(111, 19);
+=======
+            label1.Location = new Point(55, 34);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label1.Name = "label1";
             label1.Size = new Size(123, 35);
             label1.TabIndex = 0;
@@ -47,7 +51,10 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             button1.BackColor = Color.LightGray;
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button1.Location = new Point(53, 105);
             button1.Name = "button1";
             button1.Size = new Size(161, 65);
@@ -60,7 +67,10 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             button2.BackColor = Color.LightGray;
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button2.Location = new Point(354, 105);
             button2.Name = "button2";
             button2.Size = new Size(161, 65);
@@ -70,6 +80,26 @@
             button2.Click += button2_Click;
             button2.MouseLeave += button2_MouseLeave;
             button2.MouseMove += button2_MouseMove;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(53, 209);
+            button3.Name = "button3";
+            button3.Size = new Size(125, 44);
+            button3.TabIndex = 17;
+            button3.Text = "上一頁";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(354, 209);
+            button4.Name = "button4";
+            button4.Size = new Size(125, 44);
+            button4.TabIndex = 18;
+            button4.Text = "排行榜";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 

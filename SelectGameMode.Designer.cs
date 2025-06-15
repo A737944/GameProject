@@ -36,10 +36,16 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             button1.BackColor = Color.LightGray;
             button1.Location = new Point(12, 33);
             button1.Name = "button1";
             button1.Size = new Size(130, 70);
+=======
+            button1.Location = new Point(2, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(131, 65);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button1.TabIndex = 0;
             button1.Text = " 1P vs 2P";
             button1.UseVisualStyleBackColor = false;
@@ -49,10 +55,16 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             button2.BackColor = Color.LightGray;
             button2.Location = new Point(166, 33);
             button2.Name = "button2";
             button2.Size = new Size(130, 70);
+=======
+            button2.Location = new Point(152, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(131, 65);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button2.TabIndex = 1;
             button2.Text = "1P vs com";
             button2.UseVisualStyleBackColor = false;
@@ -62,9 +74,13 @@
             // 
             // button3
             // 
+<<<<<<< HEAD
             button3.Location = new Point(15, 139);
+=======
+            button3.Location = new Point(2, 101);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(131, 65);
             button3.TabIndex = 2;
             button3.Text = "上一頁";
             button3.UseVisualStyleBackColor = true;
@@ -72,10 +88,16 @@
             // 
             // button4
             // 
+<<<<<<< HEAD
             button4.BackColor = Color.LightGray;
             button4.Location = new Point(328, 33);
             button4.Name = "button4";
             button4.Size = new Size(130, 70);
+=======
+            button4.Location = new Point(314, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(144, 65);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button4.TabIndex = 3;
             button4.Text = "com vs com";
             button4.UseVisualStyleBackColor = false;

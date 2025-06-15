@@ -71,10 +71,16 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             button1.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             button1.Location = new Point(147, 410);
             button1.Name = "button1";
             button1.Size = new Size(80, 80);
+=======
+            button1.Location = new Point(66, 185);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 68);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button1.TabIndex = 0;
             button1.Text = "剪\r\n刀";
             button1.UseVisualStyleBackColor = true;
@@ -82,10 +88,16 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             button2.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             button2.Location = new Point(266, 410);
             button2.Name = "button2";
             button2.Size = new Size(80, 80);
+=======
+            button2.Location = new Point(254, 185);
+            button2.Name = "button2";
+            button2.Size = new Size(171, 68);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button2.TabIndex = 1;
             button2.Text = "石\r\n頭";
             button2.UseVisualStyleBackColor = true;
@@ -93,10 +105,16 @@
             // 
             // button3
             // 
+<<<<<<< HEAD
             button3.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             button3.Location = new Point(384, 410);
             button3.Name = "button3";
             button3.Size = new Size(80, 80);
+=======
+            button3.Location = new Point(447, 185);
+            button3.Name = "button3";
+            button3.Size = new Size(171, 68);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button3.TabIndex = 2;
             button3.Text = "布";
             button3.UseVisualStyleBackColor = true;
@@ -125,19 +143,32 @@
             // label3
             // 
             label3.AutoSize = true;
+<<<<<<< HEAD
             label3.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label3.ForeColor = Color.Red;
             label3.Location = new Point(239, 121);
             label3.Name = "label3";
             label3.Size = new Size(76, 35);
+=======
+            label3.Font = new Font("Microsoft JhengHei UI", 18F);
+            label3.Location = new Point(129, 282);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 30);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label3.TabIndex = 5;
             label3.Text = "結果:";
             // 
             // button4
             // 
+<<<<<<< HEAD
             button4.Location = new Point(584, 447);
             button4.Name = "button4";
             button4.Size = new Size(94, 69);
+=======
+            button4.Location = new Point(447, 257);
+            button4.Name = "button4";
+            button4.Size = new Size(171, 68);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button4.TabIndex = 6;
             button4.Text = "回首頁";
             button4.UseVisualStyleBackColor = true;
@@ -146,10 +177,17 @@
             // label4
             // 
             label4.AutoSize = true;
+<<<<<<< HEAD
             label4.Font = new Font("Microsoft JhengHei UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 136);
             label4.Location = new Point(147, 53);
             label4.Name = "label4";
             label4.Size = new Size(89, 41);
+=======
+            label4.Font = new Font("Microsoft JhengHei UI", 18F);
+            label4.Location = new Point(129, 353);
+            label4.Name = "label4";
+            label4.Size = new Size(67, 30);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label4.TabIndex = 7;
             label4.Text = "比分:";
             label4.Click += label4_Click;
@@ -178,7 +216,11 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
+<<<<<<< HEAD
             menuStrip1.Size = new Size(687, 24);
+=======
+            menuStrip1.Size = new Size(693, 24);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             menuStrip1.TabIndex = 10;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -317,6 +359,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(687, 528);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox20);
@@ -328,6 +371,9 @@
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
             Controls.Add(pictureBox9);
+=======
+            ClientSize = new Size(693, 402);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label4);

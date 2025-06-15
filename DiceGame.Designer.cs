@@ -61,19 +61,27 @@
             // label1
             // 
             label1.AutoSize = true;
+<<<<<<< HEAD
             label1.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label1.Location = new Point(98, 247);
+=======
+            label1.Location = new Point(16, 86);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label1.Name = "label1";
             label1.Size = new Size(118, 35);
             label1.TabIndex = 0;
             label1.Text = "player1:";
-            label1.Click += label1_Click;
+            
             // 
             // label2
             // 
             label2.AutoSize = true;
+<<<<<<< HEAD
             label2.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label2.Location = new Point(307, 247);
+=======
+            label2.Location = new Point(462, 86);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label2.Name = "label2";
             label2.Size = new Size(118, 35);
             label2.TabIndex = 1;
@@ -81,7 +89,11 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             button1.Location = new Point(115, 333);
+=======
+            button1.Location = new Point(172, 162);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button1.Name = "button1";
             button1.Size = new Size(83, 50);
             button1.TabIndex = 2;
@@ -92,9 +104,13 @@
             // label3
             // 
             label3.AutoSize = true;
+<<<<<<< HEAD
             label3.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label3.ForeColor = Color.Red;
             label3.Location = new Point(193, 78);
+=======
+            label3.Location = new Point(172, 239);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label3.Name = "label3";
             label3.Size = new Size(56, 20);
             label3.TabIndex = 3;
@@ -102,7 +118,11 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             button2.Location = new Point(323, 333);
+=======
+            button2.Location = new Point(462, 162);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button2.Name = "button2";
             button2.Size = new Size(83, 50);
             button2.TabIndex = 4;
@@ -113,17 +133,25 @@
             // label4
             // 
             label4.AutoSize = true;
+<<<<<<< HEAD
             label4.Font = new Font("Microsoft JhengHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label4.Location = new Point(184, 43);
+=======
+            label4.Location = new Point(172, 293);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label4.Name = "label4";
             label4.Size = new Size(65, 24);
             label4.TabIndex = 5;
             label4.Text = "label4";
-            label4.Click += label4_Click;
+            
             // 
             // button3
             // 
+<<<<<<< HEAD
             button3.Location = new Point(486, 333);
+=======
+            button3.Location = new Point(462, 235);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button3.Name = "button3";
             button3.Size = new Size(83, 52);
             button3.TabIndex = 6;
@@ -133,7 +161,11 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             pictureBox1.Location = new Point(98, 111);
+=======
+            pictureBox1.Location = new Point(230, 61);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(120, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -142,7 +174,11 @@
             // 
             // pictureBox2
             // 
+<<<<<<< HEAD
             pictureBox2.Location = new Point(307, 111);
+=======
+            pictureBox2.Location = new Point(643, 61);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(120, 120);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -154,7 +190,11 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
+<<<<<<< HEAD
             menuStrip1.Size = new Size(587, 24);
+=======
+            menuStrip1.Size = new Size(804, 24);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             menuStrip1.TabIndex = 9;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -246,6 +286,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+<<<<<<< HEAD
             ClientSize = new Size(587, 431);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
@@ -253,6 +294,9 @@
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
+=======
+            ClientSize = new Size(804, 333);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button3);

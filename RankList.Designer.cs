@@ -34,17 +34,25 @@
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             button1 = new Button();
+<<<<<<< HEAD
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+<<<<<<< HEAD
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft JhengHei UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label1.ForeColor = Color.Gold;
             label1.Location = new Point(132, 24);
+=======
+            label1.Font = new Font("Microsoft JhengHei UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 136);
+            label1.Location = new Point(127, 9);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             label1.Name = "label1";
             label1.Size = new Size(131, 47);
             label1.TabIndex = 0;
@@ -53,7 +61,11 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+<<<<<<< HEAD
             listView1.Location = new Point(2, 85);
+=======
+            listView1.Location = new Point(2, 59);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             listView1.Name = "listView1";
             listView1.Size = new Size(392, 236);
             listView1.TabIndex = 1;
@@ -80,7 +92,11 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             button1.Location = new Point(2, 327);
+=======
+            button1.Location = new Point(2, 301);
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             button1.Name = "button1";
             button1.Size = new Size(136, 43);
             button1.TabIndex = 2;
@@ -88,6 +104,7 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+<<<<<<< HEAD
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resource.龍;
@@ -98,10 +115,13 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             // RankList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(394, 382);
             Controls.Add(button1);
             Controls.Add(listView1);
@@ -110,6 +130,14 @@
             Name = "RankList";
             Text = "RankList";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+=======
+            ClientSize = new Size(406, 356);
+            Controls.Add(button1);
+            Controls.Add(listView1);
+            Controls.Add(label1);
+            Name = "RankList";
+            Text = "RankList";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             ResumeLayout(false);
             PerformLayout();
         }
@@ -122,6 +150,9 @@
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private Button button1;
+<<<<<<< HEAD
         private PictureBox pictureBox1;
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
     }
 }

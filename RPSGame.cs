@@ -94,14 +94,22 @@ namespace GameProject
                 if (tempP1Move == null)
                 {
                     tempP1Move = move;
+<<<<<<< HEAD
                     label1.Text = $"Player 1 選擇了 \n{move}";
+=======
+                    label1.Text = $"Player 1 選擇了";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                     pictureBox1.Image = GetMoveImage(move);
                 }
                 else
                 {
                     gameLogic.SetMoves(tempP1Move.Value, move);
                     GameResult result = gameLogic.PlayRound();
+<<<<<<< HEAD
                     label2.Text = $"Player 2 選擇了 \n{move}。";
+=======
+                    label2.Text = $"Player 2 選擇了 ";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                     UpdateResult(gameLogic.GetResultText(), result);
                     tempP1Move = null; // 重置 Player 1 的選擇
                     pictureBox2.Image = GetMoveImage(move);
@@ -118,8 +126,13 @@ namespace GameProject
                 RPSMove comMove = (RPSMove)random.Next(0, 3); // 隨機選擇剪刀、石頭或布
                 gameLogic.SetMoves(move, comMove);
                 GameResult result = gameLogic.PlayRound();
+<<<<<<< HEAD
                 label1.Text = $"你選擇了 \n{move}";
                 label2.Text = $"電腦選擇了 \n{comMove}。";
+=======
+                label1.Text = $"你選擇了";
+                label2.Text = $"電腦選擇了";
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
                 UpdateResult(gameLogic.GetResultText(), result);
                 pictureBox2.Image = GetMoveImage(comMove);
                 label4.Text = gameLogic.GetScoreText();

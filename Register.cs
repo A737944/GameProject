@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace GameProject
 {
+<<<<<<< HEAD
     public partial class Register : Form
     {
         private Login loginForm;
@@ -19,6 +20,28 @@ namespace GameProject
             textBox2.PasswordChar = '●';
             textBox3.PasswordChar = '●';
             this.loginForm = loginForm;
+=======
+    /// <summary>
+    /// 註冊表單類別
+    /// </summary>
+    public partial class Register : Form
+    {
+        /// <summary>
+        /// 登入表單參考
+        /// </summary>
+        private Login loginForm;
+
+        /// <summary>
+        /// 註冊表單建構函式
+        /// </summary>
+        public Register(Login loginForm)
+        {
+            InitializeComponent();
+            this.loginForm = loginForm;
+            // 設定密碼輸入框顯示為黑色圈圈
+            textBox2.PasswordChar = '●';
+            textBox3.PasswordChar = '●';
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,6 +59,12 @@ namespace GameProject
 
         }
 
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// 註冊按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text.Trim();
@@ -66,9 +95,17 @@ namespace GameProject
             loginForm.Show(); // 顯示登入視窗
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
              
+=======
+        /// <summary>
+        /// 取消按鈕點擊事件
+        /// </summary>
+        private void button2_Click(object sender, EventArgs e)
+        {
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             this.Close(); // 關閉註冊視窗
             loginForm.Show(); // 顯示登入視窗
         }

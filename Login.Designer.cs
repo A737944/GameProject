@@ -36,7 +36,10 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+<<<<<<< HEAD
             button4 = new Button();
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             SuspendLayout();
             // 
             // label1
@@ -48,7 +51,11 @@
             label1.Size = new Size(229, 44);
             label1.TabIndex = 0;
             label1.Text = "遊戲登陸畫面";
+<<<<<<< HEAD
             label1.Click += label1_Click;
+=======
+            
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             // 
             // label2
             // 
@@ -118,6 +125,7 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+<<<<<<< HEAD
             // button4
             // 
             button4.Location = new Point(54, 330);
@@ -128,12 +136,17 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(437, 378);
+<<<<<<< HEAD
             Controls.Add(button4);
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -159,6 +172,9 @@
         private Button button1;
         private Button button2;
         private Button button3;
+<<<<<<< HEAD
         private Button button4;
+=======
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
     }
 }

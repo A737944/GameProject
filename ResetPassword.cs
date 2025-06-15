@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace GameProject
 {
+<<<<<<< HEAD
     public partial class ResetPassword : Form
     {
         private Login loginForm;
@@ -21,6 +22,33 @@ namespace GameProject
             this.loginForm = loginForm;
         }
 
+=======
+    /// <summary>
+    /// 重設密碼表單類別
+    /// </summary>
+    public partial class ResetPassword : Form
+    {
+        /// <summary>
+        /// 登入表單參考
+        /// </summary>
+        private Login loginForm;
+
+        /// <summary>
+        /// 重設密碼表單建構函式
+        /// </summary>
+        public ResetPassword(Login loginForm)
+        {
+            InitializeComponent();
+            this.loginForm = loginForm;
+            // 設定密碼輸入框顯示為黑色圈圈
+            textBox2.PasswordChar = '●';
+            textBox3.PasswordChar = '●';
+        }
+
+        /// <summary>
+        /// 重設密碼按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text.Trim();
@@ -41,9 +69,17 @@ namespace GameProject
             loginForm.UpdatePassword(username, newPassword);
             MessageBox.Show("密碼重設成功！");
             this.Close(); // 關閉重設密碼視窗
+<<<<<<< HEAD
             loginForm.Show(); // 顯示登入視窗
         }
 
+=======
+        }
+
+        /// <summary>
+        /// 取消按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close(); // 關閉重設密碼視窗

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.Json;
+<<<<<<< HEAD
 using System.Reflection.Emit;
 
 namespace GameProject
@@ -16,14 +17,40 @@ namespace GameProject
     public partial class RankList : Form
     {
         private Form1 parentForm;
+=======
+
+namespace GameProject
+{
+    /// <summary>
+    /// 排行榜表單類別
+    /// </summary>
+    public partial class RankList : Form
+    {
+        /// <summary>
+        /// 父表單參考
+        /// </summary>
+        private Form1 parentForm;
+
+        /// <summary>
+        /// 排行榜表單建構函式
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         public RankList(Form1 parent = null)
         {
             InitializeComponent();
             parentForm = parent;
             LoadRankList();
+<<<<<<< HEAD
             label1.Parent = pictureBox1;
         }
 
+=======
+        }
+
+        /// <summary>
+        /// 載入排行榜資料
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         public void LoadRankList()
         {
             string jsonPath = "accounts.json";
@@ -52,6 +79,12 @@ namespace GameProject
             }
         }
 
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// 返回按鈕點擊事件
+        /// </summary>
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
         private void button1_Click(object sender, EventArgs e)
         {
             if (parentForm != null)

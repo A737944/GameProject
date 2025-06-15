@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"Username":"11","Password":"123","WinCount":9},{"Username":"123","Password":"123","WinCount":0},{"Username":"111","Password":"111","WinCount":7}]
+=======
+[{"Username":"11","Password":"123","WinCount":7},{"Username":"123","Password":"123","WinCount":0}]
+>>>>>>> c4835412c89aba569ccdec3750af1fe2694a8485
