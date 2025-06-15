@@ -41,17 +41,30 @@
             檔案ToolStripMenuItem = new ToolStripMenuItem();
             存檔ToolStripMenuItem = new ToolStripMenuItem();
             載入ToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(39, 122);
+            label1.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
+            label1.Location = new Point(98, 247);
             label1.Name = "label1";
-            label1.Size = new Size(52, 15);
+            label1.Size = new Size(118, 35);
             label1.TabIndex = 0;
             label1.Text = "player1:";
             label1.Click += label1_Click;
@@ -59,17 +72,18 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(485, 122);
+            label2.Font = new Font("Microsoft JhengHei UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
+            label2.Location = new Point(307, 247);
             label2.Name = "label2";
-            label2.Size = new Size(52, 15);
+            label2.Size = new Size(118, 35);
             label2.TabIndex = 1;
             label2.Text = "player2:";
             // 
             // button1
             // 
-            button1.Location = new Point(195, 198);
+            button1.Location = new Point(115, 333);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(83, 50);
             button1.TabIndex = 2;
             button1.Text = "丟";
             button1.UseVisualStyleBackColor = true;
@@ -78,17 +92,19 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(195, 275);
+            label3.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 136);
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(193, 78);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(56, 20);
             label3.TabIndex = 3;
             label3.Text = "result:";
             // 
             // button2
             // 
-            button2.Location = new Point(485, 198);
+            button2.Location = new Point(323, 333);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(83, 50);
             button2.TabIndex = 4;
             button2.Text = "丟";
             button2.UseVisualStyleBackColor = true;
@@ -97,18 +113,19 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(195, 329);
+            label4.Font = new Font("Microsoft JhengHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 136);
+            label4.Location = new Point(184, 43);
             label4.Name = "label4";
-            label4.Size = new Size(42, 15);
+            label4.Size = new Size(65, 24);
             label4.TabIndex = 5;
             label4.Text = "label4";
             label4.Click += label4_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(485, 271);
+            button3.Location = new Point(486, 333);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(83, 52);
             button3.TabIndex = 6;
             button3.Text = "回首頁";
             button3.UseVisualStyleBackColor = true;
@@ -116,18 +133,18 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(253, 97);
+            pictureBox1.Location = new Point(98, 111);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 72);
+            pictureBox1.Size = new Size(120, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(666, 97);
+            pictureBox2.Location = new Point(307, 111);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 72);
+            pictureBox2.Size = new Size(120, 120);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
@@ -137,7 +154,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(587, 24);
             menuStrip1.TabIndex = 9;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -151,22 +168,91 @@
             // 存檔ToolStripMenuItem
             // 
             存檔ToolStripMenuItem.Name = "存檔ToolStripMenuItem";
-            存檔ToolStripMenuItem.Size = new Size(180, 22);
+            存檔ToolStripMenuItem.Size = new Size(98, 22);
             存檔ToolStripMenuItem.Text = "存檔";
             存檔ToolStripMenuItem.Click += 存檔ToolStripMenuItem_Click;
             // 
             // 載入ToolStripMenuItem
             // 
             載入ToolStripMenuItem.Name = "載入ToolStripMenuItem";
-            載入ToolStripMenuItem.Size = new Size(180, 22);
+            載入ToolStripMenuItem.Size = new Size(98, 22);
             載入ToolStripMenuItem.Text = "載入";
             載入ToolStripMenuItem.Click += 載入ToolStripMenuItem_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resource.骰子6;
+            pictureBox3.Location = new Point(38, 312);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(55, 55);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resource.骰子5;
+            pictureBox4.Location = new Point(514, 135);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(55, 55);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resource._1點;
+            pictureBox5.Location = new Point(514, 43);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(55, 55);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 12;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resource.骰子2;
+            pictureBox6.Location = new Point(60, 43);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(55, 55);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 13;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resource.骰子3;
+            pictureBox7.Location = new Point(0, 161);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(55, 55);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 14;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resource.骰子4;
+            pictureBox8.Location = new Point(514, 247);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(55, 55);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 15;
+            pictureBox8.TabStop = false;
             // 
             // DiceGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(587, 431);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
@@ -184,6 +270,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,5 +295,11 @@
         private ToolStripMenuItem 檔案ToolStripMenuItem;
         private ToolStripMenuItem 存檔ToolStripMenuItem;
         private ToolStripMenuItem 載入ToolStripMenuItem;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
     }
 }

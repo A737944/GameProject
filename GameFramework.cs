@@ -72,6 +72,26 @@ namespace GameProject
                 }
             }
 
+            public void RollPlayer1()
+            {
+                Player1Roll = random.Next(1, 7);
+            }
+
+            public void RollPlayer2()
+            {
+                Player2Roll = random.Next(1, 7);
+                UpdateScore();
+            }
+
+            private void UpdateScore()
+            {
+                if (Player1Roll > Player2Roll)
+                    Player1Wins++;
+                else if (Player2Roll > Player1Roll)
+                    Player2Wins++;
+                // 平手不計分
+            }
+
             public string GetResultText()
             {
                 return $"{player1.Name} 丟出 {Player1Roll}, {player2.Name} 丟出 {Player2Roll}.";
@@ -171,6 +191,22 @@ namespace GameProject
             public string GetResultText()
             {
                 return $"{player1.Name} 出 {player1Move}, {player2.Name} 出 {player2Move}.";
+            }
+
+            public string GetWinnerText()
+            {
+                if (player1Move == player2Move)
+                    return "平手!";
+                if ((player1Move == RPSMove.Rock && player2Move == RPSMove.Scissors) ||
+                    (player1Move == RPSMove.Paper && player2Move == RPSMove.Rock) ||
+                    (player1Move == RPSMove.Scissors && player2Move == RPSMove.Paper))
+                {
+                    return $"{player1.Name} 贏了!";
+                }
+                else
+                {
+                    return $"{player2.Name} 贏了!";
+                }
             }
         }
 

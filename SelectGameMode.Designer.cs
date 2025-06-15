@@ -36,27 +36,33 @@
             // 
             // button1
             // 
-            button1.Location = new Point(15, 21);
+            button1.BackColor = Color.LightGray;
+            button1.Location = new Point(12, 33);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(130, 70);
             button1.TabIndex = 0;
             button1.Text = " 1P vs 2P";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            button1.MouseLeave += button1_MouseLeave;
+            button1.MouseMove += button1_MouseMove;
             // 
             // button2
             // 
-            button2.Location = new Point(165, 21);
+            button2.BackColor = Color.LightGray;
+            button2.Location = new Point(166, 33);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(130, 70);
             button2.TabIndex = 1;
             button2.Text = "1P vs com";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            button2.MouseLeave += button2_MouseLeave;
+            button2.MouseMove += button2_MouseMove;
             // 
             // button3
             // 
-            button3.Location = new Point(15, 110);
+            button3.Location = new Point(15, 139);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 2;
@@ -66,13 +72,16 @@
             // 
             // button4
             // 
-            button4.Location = new Point(327, 21);
+            button4.BackColor = Color.LightGray;
+            button4.Location = new Point(328, 33);
             button4.Name = "button4";
-            button4.Size = new Size(88, 23);
+            button4.Size = new Size(130, 70);
             button4.TabIndex = 3;
             button4.Text = "com vs com";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            button4.MouseLeave += button4_MouseLeave;
+            button4.MouseMove += button4_MouseMove;
             // 
             // SelectGameMode
             // 

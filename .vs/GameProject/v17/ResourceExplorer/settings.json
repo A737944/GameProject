@@ -1,18 +1,1 @@
-{
-  "ShowEmptyProjects": false,
-  "SelectedGroups": [],
-  "ExpandedProjects": [],
-  "EnableSpellChecker": true,
-  "ColumnOrder": [
-    "name",
-    "type",
-    "neutral-value",
-    "neutral-comment",
-    "file-path",
-    "file-name"
-  ],
-  "VisibleColumnKeys": [
-    "name",
-    "neutral-value"
-  ]
-}
+{"ShowEmptyProjects":false,"CustomColumnOrderings":{},"ShowValidationErrors":true,"SelectedResourceGroupsByProjectFilePath":{"C:\\Users\\user\\Desktop\\\u4FEE\u6539\\\u7F8E\u7DE8\\project-1.5\\project-1\\project-1\\GameProject\\gameproject\\GameProject.csproj":["C:\\Users\\user\\Desktop\\\u4FEE\u6539\\\u7F8E\u7DE8\\project-1.5\\project-1\\project-1\\GameProject\\gameproject\\Properties\\Resource.resx"]},"VisibleColumnKeys":["name","neutral-value"]}
